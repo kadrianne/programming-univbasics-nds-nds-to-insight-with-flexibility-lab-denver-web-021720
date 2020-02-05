@@ -287,4 +287,4 @@ end
   a_o_a_movies_with_director_names = movies_with_directors_set(db)
   movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
 
-pp movies_with_directors_set(db)
+pp movies_with_director_names
