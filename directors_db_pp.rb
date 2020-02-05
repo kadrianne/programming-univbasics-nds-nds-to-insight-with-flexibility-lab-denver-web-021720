@@ -268,4 +268,20 @@ def movies_with_directors_set(source)
   directors_movies
 end
 
+def flatten_a_o_a(aoa)
+  result = []
+  i = 0
+
+  while i < aoa.length do
+    k = 0
+    while k < aoa[i].length do
+      result << aoa[i][k]
+      k += 1
+    end
+    i += 1
+  end
+
+  result
+end
+
 pp movies_with_directors_set(db)
