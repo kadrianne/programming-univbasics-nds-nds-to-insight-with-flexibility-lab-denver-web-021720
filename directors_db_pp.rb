@@ -268,5 +268,4 @@ def movies_with_directors_set(source)
   directors_movies
 end
 
-movies_with_directors_set(db)
-directors_movies
+pp movies_with_directors_set(db)
