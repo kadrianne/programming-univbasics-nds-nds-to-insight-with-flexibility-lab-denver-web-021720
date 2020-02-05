@@ -94,7 +94,7 @@ def movies_with_directors_set(source)
     titles = source[dir_index]
     title_index = 0
     inner_array = []
-    director_titles - {}
+    director_titles = {}
     while title_index < titles.length do
       director_titles[:name] = titles[:name]
       director_titles[:title] = titles[:movies][title_index][:title]
