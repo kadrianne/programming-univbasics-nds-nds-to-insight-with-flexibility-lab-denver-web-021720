@@ -269,3 +269,4 @@ def movies_with_directors_set(source)
 end
 
 movies_with_directors_set(db)
+directors_movies
