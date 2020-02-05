@@ -89,7 +89,8 @@ end
 
 def movies_with_directors_set(source)
   dir_index = 0
-  
+  directors_movies = []
+  while 
 
 
   directors_movies
