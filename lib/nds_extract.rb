@@ -74,6 +74,7 @@ def gross_per_studio(collection)
     end
     mov_index += 1
   end
+  binding.pry
   studio_gross
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
