@@ -96,17 +96,8 @@ def movies_with_directors_set(source)
   directors_movies = []
   while dir_index < source.length do
     titles = source[dir_index]
-    # binding.pry
-    # title_index = 0
-    # inner_array = []
-    # director_titles = {}
-    # while title_index < titles.length do
-    
-    
       director_name = titles[:name]
       director_movie = titles[:movies]
-
-    # end
     directors_movies << movies_with_director_key(director_name, director_movie)
     dir_index += 1
   end
