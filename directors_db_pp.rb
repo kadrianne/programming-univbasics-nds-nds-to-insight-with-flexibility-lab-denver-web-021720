@@ -1,4 +1,4 @@
-[{:name=>"Stephen Spielberg",
+db = [{:name=>"Stephen Spielberg",
   :movies=>
    [{:title=>"Jaws",
      :studio=>"Universal",
@@ -247,3 +247,25 @@ def gross_per_studio(collection)
   end
   studio_gross
 end
+
+def movies_with_directors_set(source)
+  dir_index = 0
+  directors_movies = []
+  while dir_index < source.length do
+    titles = source[dir_index]
+    title_index = 0
+    inner_array = []
+    director_titles = {}
+    while title_index < titles.length do
+      director_titles[:director_name] = titles[:name]
+      director_titles[:movies] = titles[:movies][title_index]
+      inner_array << director_titles
+      title_index += 1
+    end
+    directors_movies << inner_array
+    dir_index += 1
+  end
+  directors_movies
+end
+
+movies_with_directors_set(db)
