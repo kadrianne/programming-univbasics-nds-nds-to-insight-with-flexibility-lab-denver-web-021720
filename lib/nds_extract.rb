@@ -74,7 +74,7 @@ def gross_per_studio(collection)
     end
     mov_index += 1
   end
-  binding.pry
+  # binding.pry
   studio_gross
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
@@ -108,6 +108,7 @@ def movies_with_directors_set(source)
     directors_movies << inner_array
     dir_index += 1
   end
+  binding.pry
   directors_movies
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
