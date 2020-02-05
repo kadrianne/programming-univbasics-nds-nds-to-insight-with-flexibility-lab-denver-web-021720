@@ -1,4 +1,4 @@
-
+titles = 
 
 while title_index < titles.length do
       director_titles[:name] = titles[:name]
