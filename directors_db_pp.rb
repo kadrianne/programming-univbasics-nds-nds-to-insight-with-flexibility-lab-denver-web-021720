@@ -284,4 +284,8 @@ def flatten_a_o_a(aoa)
   result
 end
 
+  a_o_a_movies_with_director_names = movies_with_directors_set(db)
+  movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
+  return gross_per_studio(movies_with_director_names)
+end
 pp movies_with_directors_set(db)
